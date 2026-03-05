@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bminton</title>
+    <!-- THEME SCRIPT - Runs before anything else -->
+    <script>
+      (function () {
+        // Disable transitions immediately
+        document.documentElement.classList.add("no-transitions");
+
+        // Set theme
+        const saved = localStorage.getItem("theme");
+        const root = document.documentElement;
+
+        if (saved === "dark") {
+          root.classList.add("dark");
+        } else if (saved === "light") {
+          root.classList.remove("dark");
+        } else {
+          const systemPrefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (systemPrefersDark) {
+            root.classList.add("dark");
+          }
+        }
+
+        // Remove no-transitions after a tiny delay (using requestAnimationFrame)
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            document.documentElement.classList.remove("no-transitions");
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
