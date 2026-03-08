@@ -20,11 +20,11 @@ const Navbar = () => {
 
   return (
     <div ref={menuRef} className="relative">
-      <section className="flex gap-2 sm:gap-4 justify-between items-center py-3">
+      <section className="flex border-gray-900 px-4 sm:px-5 md:px-6 gap-2 sm:gap-4 justify-between items-center py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <TowelRack className="text-white" />
-          <span className="text-white font-bold text-lg sm:text-xl">
+          <TowelRack className="dark:text-white" />
+          <span className="dark:text-white font-bold text-lg sm:text-xl">
             Bminton
           </span>
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="dark:text-gray-300 text-gray-800 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 About
               </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#membership"
-                className="text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="dark:text-gray-300 text-gray-800 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Services
               </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#benefits"
-                className="text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="dark:text-gray-300 text-gray-800 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Benefits
               </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#testimonials"
-                className="text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="dark:text-gray-300 text-gray-800 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Testimonials
               </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
 
           {/* Contact button - hidden on mobile, visible on sm and up */}
-          <button className="btn-primary px-4 sm:px-6 hidden sm:block">
+          <button className="btn-primary bg-purple-500 px-4 sm:px-6 hidden sm:block">
             Contact us
           </button>
 
@@ -85,9 +85,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X size={24} className="text-white" />
+              <X size={24} className="dark:text-white" />
             ) : (
-              <Menu size={24} className="text-white" />
+              <Menu size={24} className="dark:text-white" />
             )}
           </button>
         </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
         className={`
           md:hidden absolute left-0 right-0 z-50 mx-4 sm:mx-6 mt-2
           transition-all duration-300 ease-in-out
-          ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}
+          ${isMenuOpen ? "opacity-100 -translate-y-2" : "-translate-y-20 opacity-0 pointer-events-none"}
         `}
       >
         <div className="p-4 bg-white dark:bg-gray-900 rounded-xl shadow-xl border border-gray-200 dark:border-gray-800">
@@ -107,7 +107,7 @@ const Navbar = () => {
               <a
                 href="#about"
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                className="block py-3 px-4 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
               >
                 About
               </a>
@@ -116,7 +116,7 @@ const Navbar = () => {
               <a
                 href="#membership"
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                className="block py-3 px-4 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
               >
                 Services
               </a>
@@ -125,7 +125,7 @@ const Navbar = () => {
               <a
                 href="#benefits"
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                className="block py-3 px-4 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
               >
                 Benefits
               </a>
@@ -134,7 +134,7 @@ const Navbar = () => {
               <a
                 href="#testimonials"
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                className="block py-3 px-4 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
               >
                 Testimonials
               </a>
@@ -148,7 +148,7 @@ const Navbar = () => {
           <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800 md:hidden">
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="btn-primary w-full"
+              className="btn-primary bg-purple-500 w-full whitespace-nowrap"
             >
               Contact us
             </button>

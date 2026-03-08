@@ -1,19 +1,10 @@
-import React from "react";
-import {
-  ArrowRight,
-  Award,
-  Users,
-  Calendar,
-  MapPin,
-  Star,
-  Check,
-} from "lucide-react";
+import { Star, Check } from "lucide-react";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-20 md:py-28 px-4 md:px-8 bg-white dark:bg-gray-900 transition-colors duration-300 overflow-hidden"
+      className="py-20 md:py-28 px-4 md:px-8 bg-gray-100 dark:bg-gray-900 transition-colors duration-300 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -21,14 +12,9 @@ const About = () => {
           <span className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-[0.2em]">
             About Us
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
-            Premium Badminton Destination
+          <h2 className=" font-bold text-gray-900 dark:text-white mt-4 mb-6">
+            Ultimate Badminton Destiny
           </h2>
-          <div className="flex items-center justify-center gap-2">
-            <div className="w-12 h-0.5 bg-purple-600/30 dark:bg-purple-400/30 rounded-full" />
-            <div className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full" />
-            <div className="w-12 h-0.5 bg-purple-600/30 dark:bg-purple-400/30 rounded-full" />
-          </div>
         </div>
 
         {/* Main Content with Organic Grid */}
@@ -43,7 +29,7 @@ const About = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
             {/* Medium Image - Overlapping Top Right */}
@@ -54,7 +40,7 @@ const About = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
             {/* Small Image - Bottom Left */}
@@ -65,13 +51,13 @@ const About = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
             {/* Floating Testimonial Card */}
-            <div className="absolute bottom-[5%] right-[5%] w-[60%] bg-white/90 dark:bg-gray-800/90 backdrop-blur-md p-4 rounded-xl shadow-2xl z-40 border border-white/20 dark:border-gray-700/30">
+            <div className="absolute bottom-[5%] right-[5%] w-[60%] bg-white/90 dark:bg-gray-800/90 backdrop-blur-md p-2 rounded-xl shadow-2xl z-40 border border-white/20 dark:border-gray-700/30">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center shrink-0">
                   <Star className="w-5 h-5 text-purple-600 dark:text-purple-400 fill-current" />
                 </div>
                 <div>
@@ -93,21 +79,15 @@ const About = () => {
               </div>
             </div>
 
-            {/* Decorative Elements */}
+            {/* Decorative Elements
             <div className="absolute top-[30%] left-[40%] w-20 h-20 border-2 border-purple-600/20 dark:border-purple-400/20 rounded-full -z-10 animate-pulse" />
+            
             <div className="absolute bottom-[40%] right-[20%] w-32 h-32 border-2 border-purple-600/10 dark:border-purple-400/10 rounded-full -z-10" />
+           */}
           </div>
 
           {/* Right Side - Content */}
           <div className="space-y-6 lg:space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 px-4 py-2 rounded-full w-fit">
-              <span className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full animate-pulse" />
-              <span className="text-sm font-semibold text-purple-700 dark:text-purple-400">
-                Premier Badminton Facility Since 2017
-              </span>
-            </div>
-
             {/* Main Content */}
             <div className="space-y-4">
               <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
@@ -119,12 +99,6 @@ const About = () => {
                 vibrant community for players of all levels. From beginners
                 taking their first swing to competitive athletes aiming for the
                 podium.
-              </p>
-
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                Our certified coaches bring international experience and
-                personalized attention to every session, ensuring you reach your
-                full potential.
               </p>
             </div>
 
@@ -143,7 +117,23 @@ const About = () => {
                   <Check className="w-4 h-4 text-purple-600 dark:text-purple-400" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Community Events
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                </div>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   Expert Coaching
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                </div>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Community Events
                 </span>
               </div>
               <div className="flex items-start gap-3">

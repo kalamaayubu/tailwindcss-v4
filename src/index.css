@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 
 @import "tailwindcss";
 
@@ -23,7 +21,7 @@
   }
 
   button {
-    @apply px-4 py-2 rounded-full whitespace-normal cursor-pointer transition-all active:scale-95 disabled:opacity-70;
+    @apply px-4 py-3 rounded-full whitespace-normal cursor-pointer transition-all active:scale-95 disabled:opacity-70;
   }
   h2 {
     @apply mb-6 text-gray-900 font-semibold dark:text-gray-300 text-3xl sm:text-4xl lg:text-5xl;
