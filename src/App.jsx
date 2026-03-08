@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Benefits from "./components/Benefits";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+import FinalCTA from "./components/FinalCTA";
 
 const App = () => {
   return (
@@ -10,19 +13,22 @@ const App = () => {
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/assets/images/cheerfulBaddyKids.webp')`,
+          backgroundImage: `url('/assets/images/cheerfulBaddyids.webp')`,
         }}
       >
-        <header className="p-4 pb-0 bg-black/80 text-gray-100">
+        <header className="py-4  pb-0 bg-gray-950 text-gray-100">
           <Navbar />
           <Hero />
         </header>
       </div>
-      <main className=" pt-12 flex flex-col dark:text-gray-300 text-gray-900">
+      <main className=" flex flex-col dark:text-gray-300 text-gray-900">
         <About />
         <Services />
         <Benefits />
+        <Testimonials />
+        <FinalCTA />
       </main>
+      <Footer />
     </div>
   );
 };
