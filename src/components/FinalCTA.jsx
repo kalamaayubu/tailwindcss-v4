@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 const FinalCTA = () => {
   return (
     <section
-      className="relative w-full min-h-120 pt-12 overflow-hidden transition-colors duration-300
+      className="relative w-full min-h-[650px] overflow-hidden transition-colors duration-500
                         bg-white dark:bg-black text-gray-900 dark:text-white"
     >
       {/* Floating abstract shapes */}
@@ -12,7 +12,7 @@ const FinalCTA = () => {
                       bg-purple-200/25 dark:bg-purple-600/30"
       />
       <div
-        className="absolute -bottom-10 right-16 w-64 h-64 rounded-full blur-3xl animate-blob-slower mix-blend-screen
+        className="absolute -bottom-28 right-16 w-64 h-64 rounded-full blur-3xl animate-blob-slower mix-blend-screen
                       bg-pink-200/20 dark:bg-pink-500/25"
       />
       <div
@@ -28,7 +28,7 @@ const FinalCTA = () => {
         GAME
       </h1>
       <h1
-        className="absolute text-[5rem] md:text-[7rem] font-black bottom-0 right-12 opacity-10 -rotate-6 select-none pointer-events-none
+        className="absolute text-[5rem] md:text-[7rem] font-black bottom-28 right-12 opacity-10 -rotate-6 select-none pointer-events-none
                      text-gray-300 dark:text-white"
       >
         PLAY
@@ -54,27 +54,27 @@ const FinalCTA = () => {
           <button
             className="group relative inline-flex items-center gap-4
                              bg-gray-900 dark:bg-white text-white dark:text-gray-900
-                             font-bold px-6 mb-4 rounded-full shadow-2xl overflow-hidden
+                             font-bold px-10 py-4 lg:px-12 lg:py-5 rounded-full shadow-2xl overflow-hidden
                              transition-colors duration-300"
           >
-            <span className="relative whitespace-nowrap z-10 transition-transform group-hover:translate-x-2">
+            <span className="relative z-10 transition-transform group-hover:translate-x-2">
               Join Now
             </span>
             <ArrowRight className="relative z-10 w-6 h-6 transition-transform group-hover:translate-x-3" />
             <span
               className="absolute left-0 top-0 w-0 h-full
-                             bg-purple-500/40 rounded-full
+                             bg-pink-500/40 rounded-full
                              transition-all duration-500 group-hover:w-full"
             ></span>
           </button>
         </div>
 
         {/* Floating shuttlecock */}
-        {/* <img
+        <img
           src="/assets/images/shuttlecock.webp"
           alt="Flying shuttlecock"
           className="absolute w-24 lg:w-32 top-10 right-10 animate-float-slow"
-        /> */}
+        />
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div ref={menuRef} className="relative">
-      <section className="flex border-gray-900 px-4 sm:px-5 md:px-6 gap-2 sm:gap-4 justify-between items-center py-3">
+      <section className="flex border-b border-gray-900 px-4 gap-2 sm:gap-4 justify-between items-center py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <TowelRack className="dark:text-white" />

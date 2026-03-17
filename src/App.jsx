@@ -16,7 +16,7 @@ const App = () => {
           backgroundImage: `url('/assets/images/cheerfulBaddyids.webp')`,
         }}
       >
-        <header className="py-4 pb-0 dark:bg-gray-950 bg-white dark:text-gray-100 text-gray-800 transition-all duration-300">
+        <header className="py-4  pb-0 bg-gray-950 text-gray-100">
           <Navbar />
           <Hero />
         </header>

@@ -6,28 +6,26 @@ const Hero = () => {
     "/assets/images/trustee2.webp",
     "/assets/images/trustee3.webp",
     "/assets/images/trustee4.webp",
-    "/assets/images/trustee1.webp",
-    "/assets/images/trustee4.webp",
   ];
 
   return (
-    <section className=" dark:bg-gray-950 text-gray-900 dark:text-white py-12 lg:py-24 overflow-hidden transition-colors duration-300">
+    <section className="bg-gray-950 text-white py-16 lg:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-2 items-center">
         {/* ===== LEFT: TEXT ===== */}
         <div>
           {/* Trust */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex -space-x-6">
+            <div className="flex -space-x-3">
               {trustedUsers.map((img, i) => (
                 <img
                   key={i}
                   src={img}
                   alt="Member"
-                  className="w-10 h-10 rounded-full border-2 border-white dark:border-gray-950 object-cover"
+                  className="w-10 h-10 rounded-full border-2 border-gray-950 object-cover"
                 />
               ))}
             </div>
-            <span className="text-gray-600 dark:text-gray-300 text-sm font-medium">
+            <span className="text-gray-300 text-sm font-medium">
               100K+ players trust us
             </span>
           </div>
@@ -38,49 +36,44 @@ const Hero = () => {
             <br />
             Play Smart.
             <br />
-            <span className="text-purple-600 dark:text-purple-500">
-              Win More.
-            </span>
+            <span className="text-purple-400">Win More.</span>
           </h1>
 
           {/* Description */}
-          <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 max-w-lg">
+          <p className="text-gray-300 text-lg mb-8 max-w-lg">
             A badminton club where beginners grow fast and pros stay sharp.
             Coaching, courts, and community in one place.
           </p>
 
           {/* CTA */}
-          <button className="inline-flex whitespace-nowrap items-center gap-2 px-6 rounded-full dark:bg-white dark:text-black bg-purple-600 text-white font-semibold transition group">
-            Join Now
-            <ArrowRight
-              size={18}
-              className="group-hover:translate-x-1 transition-transform"
-            />
+          <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-200 transition shadow-lg">
+            Become a Member
+            <ArrowRight size={18} />
           </button>
         </div>
 
         {/* ===== RIGHT: STACKED MEDIA ===== */}
-        <div className="relative h-105 hidden lg:block">
+        <div className="relative h-[420px] hidden lg:block">
           {/* Back Image 1 */}
           <img
             src="/assets/images/cheerfulBaddyKids.webp"
             alt=""
-            className="absolute top-0 left-6 w-64 h-40 object-cover rounded-2xl shadow-xl rotate-[-6deg] opacity-80 dark:opacity-90"
+            className="absolute top-0 left-6 w-64 h-40 object-cover rounded-2xl shadow-xl rotate-[-6deg] opacity-80"
           />
 
           {/* Back Image 2 */}
           <img
-            src="/assets/images/baddyGuy.webp"
+            src="/assets/images/friends.webp"
             alt=""
-            className="absolute bottom-4 left-0 w-72 h-44 object-cover rounded-2xl shadow-xl rotate-[5deg] opacity-80 dark:opacity-90"
+            className="absolute bottom-4 left-0 w-72 h-44 object-cover rounded-2xl shadow-xl rotate-[5deg] opacity-80"
           />
 
           {/* MAIN VIDEO (Front) */}
-          <div className="absolute right-0 top-10 w-[340px] h-[210px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/20 bg-gray-200 dark:bg-black">
+          <div className="absolute right-0 top-10 w-[340px] h-[210px] rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-black">
             <video
               controls
               preload="none"
-              poster="/assets/images/budsOnGround.webp"
+              poster="/assets/images/friends.webp"
               className="w-full h-full object-cover"
             >
               <source
@@ -89,7 +82,7 @@ const Hero = () => {
               />
             </video>
 
-            <span className="absolute bottom-3 left-4 text-sm bg-white/80 dark:bg-black/60 text-gray-800 dark:text-white px-3 py-1 rounded-full backdrop-blur-sm">
+            <span className="absolute bottom-3 left-4 text-sm bg-black/60 px-3 py-1 rounded-full">
               Live training
             </span>
           </div>
@@ -101,7 +94,7 @@ const Hero = () => {
         <video
           controls
           preload="none"
-          poster="/assets/images/budsOnGround.webp"
+          poster="/assets/images/friends.webp"
           className="w-full aspect-video rounded-2xl object-cover shadow-xl"
         >
           <source
@@ -111,7 +104,7 @@ const Hero = () => {
         </video>
 
         <img
-          src="/assets/images/baddyGuy.webp"
+          src="/assets/images/cheerfulBaddyKids.webp"
           alt=""
           className="w-full aspect-video object-cover rounded-2xl shadow-xl"
         />
