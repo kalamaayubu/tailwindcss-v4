@@ -3,13 +3,13 @@ import { ArrowRight } from "lucide-react";
 const FinalCTA = () => {
   return (
     <section
-      className="relative w-full min-h-[650px] overflow-hidden transition-colors duration-500
-                        bg-white dark:bg-black text-gray-900 dark:text-white"
+      className="relative py-16 w-full overflow-hidden transition-colors duration-500
+                        bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-white"
     >
       {/* Floating abstract shapes */}
       <div
         className="absolute -top-36 -left-36 w-80 h-80 rounded-full blur-3xl animate-blob-slow mix-blend-screen
-                      bg-purple-200/25 dark:bg-purple-600/30"
+                      bg-purple-200/80 dark:bg-purple-600/30"
       />
       <div
         className="absolute -bottom-28 right-16 w-64 h-64 rounded-full blur-3xl animate-blob-slower mix-blend-screen
@@ -35,7 +35,7 @@ const FinalCTA = () => {
       </h1>
 
       {/* Main content */}
-      <div className="relative z-10 max-w-6xl mx-auto h-full flex flex-col justify-center px-6 sm:px-12 lg:px-20 gap-10 lg:gap-16">
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col justify-center px-6 sm:px-12 lg:px-20 gap-10 lg:gap-16">
         {/* Headline + Description */}
         <div className="space-y-6 lg:space-y-8 max-w-2xl">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight tracking-tight">
@@ -53,7 +53,7 @@ const FinalCTA = () => {
         <div>
           <button
             className="group relative inline-flex items-center gap-4
-                             bg-gray-900 dark:bg-white text-white dark:text-gray-900
+                             bg-purple-600 dark:bg-white text-white dark:text-gray-900
                              font-bold px-10 py-4 lg:px-12 lg:py-5 rounded-full shadow-2xl overflow-hidden
                              transition-colors duration-300"
           >
@@ -68,13 +68,6 @@ const FinalCTA = () => {
             ></span>
           </button>
         </div>
-
-        {/* Floating shuttlecock */}
-        <img
-          src="/assets/images/shuttlecock.webp"
-          alt="Flying shuttlecock"
-          className="absolute w-24 lg:w-32 top-10 right-10 animate-float-slow"
-        />
       </div>
     </section>
   );

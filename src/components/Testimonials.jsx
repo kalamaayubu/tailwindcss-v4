@@ -258,7 +258,7 @@ const Testimonials = () => {
             </div>
 
             {/* Quote */}
-            <blockquote className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-6 md:mb-8 leading-snug lg:leading-tight text-gray-900 dark:text-white">
+            <blockquote className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-6 md:mb-8 leading-snug lg:leading-tight text-gray-900 dark:text-white">
               "{activeTestimonial.quote}"
             </blockquote>
 
@@ -276,7 +276,7 @@ const Testimonials = () => {
             <div className="flex items-center gap-3 md:gap-4">
               <button
                 onClick={prevSlide}
-                className="w-12 h-12 rounded-full transition-all flex items-center justify-center group border border-gray-300 hover:border-purple-600 text-gray-700 hover:text-purple-600 hover:bg-purple-50 dark:border-white/20 dark:hover:border-purple-600 dark:text-white dark:hover:text-purple-600 dark:hover:bg-purple-600/10"
+                className="w-12 h-12 rounded-full transition-all flex items-center justify-center group border border-gray-300 text-gray-700 hover:bg-purple-50 dark:border-white/20 dark:text-white dark:hover:bg-purple-600/10"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 group-hover:-translate-x-1 transition-transform" />
@@ -302,7 +302,7 @@ const Testimonials = () => {
 
               <button
                 onClick={nextSlide}
-                className="w-12 h-12 rounded-full transition-all flex items-center justify-center group border border-gray-300 hover:border-purple-600 text-gray-700 hover:text-purple-600 hover:bg-purple-50 dark:border-white/20 dark:hover:border-purple-600 dark:text-white dark:hover:text-purple-600 dark:hover:bg-purple-600/10"
+                className="w-12 h-12 rounded-full transition-all flex items-center justify-center group border border-gray-300 text-gray-700 hover:bg-purple-50 dark:border-white/20 dark:text-white dark:hover:bg-purple-600/10"
                 aria-label="Next testimonial"
               >
                 <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />

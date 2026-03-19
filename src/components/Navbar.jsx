@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div ref={menuRef} className="relative">
-      <section className="flex border-b border-gray-900 px-4 gap-2 sm:gap-4 justify-between items-center py-3">
+      <section className="flex dark:border-b dark:bg-gray-950 border-gray-900 px-4 gap-2 sm:gap-4 justify-between items-center py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <TowelRack className="dark:text-white" />
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
 
           {/* Contact button - hidden on mobile, visible on sm and up */}
-          <button className="btn-primary bg-purple-500 px-4 sm:px-6 hidden sm:block">
+          <button className="btn-primary bg-purple-500 dark:bg-white px-4 sm:px-6 hidden sm:block">
             Contact us
           </button>
 
@@ -148,7 +148,7 @@ const Navbar = () => {
           <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800 md:hidden">
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="btn-primary bg-purple-500 w-full whitespace-nowrap"
+              className="btn-primary bg-purple-500 dark:bg-white w-full whitespace-nowrap"
             >
               Contact us
             </button>
